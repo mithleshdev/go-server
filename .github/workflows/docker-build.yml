@@ -20,7 +20,7 @@ jobs:
         id: meta
         run: |
           COMMIT_SHA=$(echo ${{ github.sha }} | cut -c1-7)
-          TIMESTAMP=$(date +%Y%m%d-%H%M%S)
+          TIMESTAMP=$(date +%s)
           echo "commit_tag=mithleshdev/go-server:${COMMIT_SHA}-${TIMESTAMP}" >> $GITHUB_OUTPUT
           echo "latest_tag=mithleshdev/go-server:latest" >> $GITHUB_OUTPUT
 
