@@ -49,6 +49,6 @@ func main() {
 	// Wrap the mux with logging middleware
 	handler := loggingMiddleware(mux)
 
-	log.Printf("Starting server on port 8080")
-	log.Fatal(http.ListenAndServe(":8080", handler))
+	log.Printf("Starting server on port 80")
+	log.Fatal(http.ListenAndServe(":80", handler))
 }
